@@ -1,6 +1,6 @@
 import { betterAuth, BetterAuthOptions } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
-import { db } from "@/db/drizzle"; // your drizzle instance
+import { db } from "@/db/drizzle";
 import sendMail from "@/actions/email";
 import EmailVerification from "@/components/email/EmailVerifications";
 import PasswordReset from "@/components/email/PasswordReset";
@@ -10,6 +10,12 @@ export const auth = betterAuth({
   database: drizzleAdapter(db, {
     provider: "pg", // or "mysql", "sqlite"
   }),
+  session: {
+    cookieCache: {
+      enabled: true,
+      maxAge: 5 * 60, // CACHE DURARION IN SECONDS
+    },
+  },
   emailAndPassword: {
     enabled: true,
     autoSignIn: true,
