@@ -40,7 +40,7 @@ const PasswordReset = (resetUrl: string) => (
         </Section>
 
         <Section style={content}>
-          <Text>Hello,</Text>
+          <Text>Hello</Text>
           <Text>
             We received a request to reset your password. If you didn't make
             this request, please ignore this email.

@@ -40,7 +40,7 @@ const EmailVerification = (verificationUrl: string) => (
         </Section>
 
         <Section style={content}>
-          <Text>Hello,</Text>
+          <Text>Hello</Text>
           <Text>
             We received a request to verify this email address. If you didn't
             make this request, please ignore this email.

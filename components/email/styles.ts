@@ -31,7 +31,8 @@ export const button: CSSProperties = {
   borderRadius: "6px",
   textDecoration: "none",
   display: "inline-block",
-  marginTop: "20px",
+  marginTop: "10px",
+  marginBottom: "5px",
   fontWeight: "bold",
 };
 export const footer: CSSProperties = {
