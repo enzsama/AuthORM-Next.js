@@ -25,7 +25,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { signupSchema } from "@/lib/zod/authSchema";
 import { signIn, signUp } from "@/lib/auth-client";
-import { ErrorContext } from "better-auth/react";
+import { ErrorContext } from "@better-fetch/fetch";
 import providers from "@/lib/providers";
 import { useRouter } from "next/navigation";
 

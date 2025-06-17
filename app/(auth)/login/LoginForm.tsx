@@ -17,7 +17,7 @@ import { loginSchema } from "@/lib/zod/authSchema";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { signIn } from "@/lib/auth-client";
-import { ErrorContext } from "better-auth/react";
+import { ErrorContext } from "@better-fetch/fetch";
 import {
   Form,
   FormControl,
